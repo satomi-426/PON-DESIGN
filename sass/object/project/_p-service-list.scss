@@ -1,0 +1,13 @@
+@use "../../global" as g;
+
+.p-service-list-wrapper {
+    padding-bottom: 110px;
+}
+.p-service-list {
+    display: grid;
+    gap: 60px;
+
+    @include g.mq(md) {
+        gap: 50px;
+    }
+}

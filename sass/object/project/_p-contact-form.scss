@@ -1,0 +1,20 @@
+@use "../../global" as g;
+
+.p-contact-form__lead {
+    text-align: center;
+    margin-bottom: 40px;
+
+    @include g.mq(md) {
+        margin-bottom: 30px;
+    }
+}
+.p-contact-form__body {
+    max-width: 750px;
+    background-color: g.$color-gray;
+    padding: 90px;
+    margin: 0 auto;
+
+    @include g.mq(md) {
+        padding: 30px;
+    }
+}

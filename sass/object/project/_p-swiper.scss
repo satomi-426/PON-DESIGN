@@ -1,0 +1,28 @@
+@use "../../global" as g;
+
+.swiper-container {
+    position: relative;
+    max-width: 750px;
+    // width: 60%;
+}
+.swiper {
+    // max-width: inherit;
+    width: inherit;
+}
+.swiper-slide img {
+    // max-width: inherit;
+    width: inherit;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    text-align: right;
+    bottom: -25px;
+}
+.swiper-pagination-bullet {
+    background: #C0C0C0;
+}
+.swiper-pagination-bullet-active {
+    background: g.$color-primary;
+}

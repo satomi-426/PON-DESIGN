@@ -1,0 +1,15 @@
+@use "../../global" as g;
+
+.p-company-info {
+    margin-bottom: 110px;
+
+    @include g.mq(md) {
+        margin-bottom: 50px;
+    }
+}
+.p-company-info__heading {
+    text-align: center;
+}
+.p-company-info__table {
+    padding-bottom: 60px;
+}

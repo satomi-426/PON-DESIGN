@@ -1,0 +1,36 @@
+@use "../global" as g;
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: g.$font-family;
+    line-height: 1.8;
+    color: g.$color-text;
+    letter-spacing: 0.05em;
+    @include g.font-size(15);
+    @include g.mq(md) {
+        @include g.font-size(14);
+    }
+}
+
+a {
+    color : g.$color-text;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: g.$color-primary;
+}
+
+::selection {
+    color: #fff;
+    background-color: g.$color-primary;
+}

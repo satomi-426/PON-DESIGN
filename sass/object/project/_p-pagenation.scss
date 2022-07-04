@@ -1,0 +1,29 @@
+@use "../../global" as g;
+
+.p-pagenation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.p-pagenation__page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include g.font-size(20);
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #F1EBF8;
+}
+.p-pagenation__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    background: linear-gradient(#7633a4 0%, #250d65 100%);
+    color: #fff;
+}

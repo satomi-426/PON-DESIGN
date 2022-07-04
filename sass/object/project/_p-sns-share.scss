@@ -1,0 +1,11 @@
+@use "../../global" as g;
+
+.p-sns-share__item {
+    display: inline-block;
+    vertical-align: bottom;
+    list-style: none;
+    margin: 5px 3px 0 0;
+}
+.p-sns-share__item iframe {
+    vertical-align: middle;
+}

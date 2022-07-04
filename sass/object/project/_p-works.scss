@@ -1,0 +1,62 @@
+@use "../../global" as g;
+
+.p-works__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 30px 80px;
+
+    @include g.mq(md) {
+        flex-direction: column;
+        padding: 0 20px 60px;
+    }
+}
+.p-works__inner::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 66%;
+    height: 100%;
+    background-color: #F0F0F0;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: -1;
+
+    @include g.mq(md) {
+        width: 100%;
+        height: 78%;
+        top: auto;
+        bottom: 0;
+        -webkit-transform: none;
+                transform: none;
+    }
+}
+.p-works__img-wrapper {
+    width: 60%;
+    padding-bottom: 30px;
+    margin-right: 20px;
+
+    @include g.mq(md) {
+        width: 100%;
+        padding-bottom: 40px;
+        margin-right: 0;
+    }
+}
+.p-works__desc {
+    flex: 1;
+    text-align: center;
+}
+.p-works__text {
+    @include g.font-size(15);
+    font-weight: 300;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+
+    @include g.mq(md) {
+        @include g.font-size(14);
+    }
+}

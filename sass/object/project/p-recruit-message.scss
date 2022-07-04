@@ -1,0 +1,47 @@
+@use "../../global" as g;
+
+.p-recruit-message {
+    text-align: center;
+}
+.p-recruit-message__inner {
+    padding: 0;
+}
+.p-recruit-message__heading {
+    color: g.$color-primary;
+    padding: 0 20px;
+}
+.p-recruit-message__title {
+    @include g.font-size(72);
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    margin-bottom: 15px;
+
+    @include g.mq(md) {
+        @include g.font-size(48);
+        line-height: 1.1;
+    }
+}
+.p-recruit-message__subtitle {
+    @include g.font-size(32);
+    font-weight: 300;
+    margin-bottom: 40px;
+
+    @include g.mq(md) {
+        @include g.font-size(18);
+        margin-bottom: 25px;
+    }
+}
+.p-recruit-message__body {
+    line-height: 1.75;
+    padding: 0 20px;
+    margin-bottom: 40px;
+
+    @include g.mq(md) {
+        @include g.font-size(15);
+        margin-bottom: 25px;
+    }
+}
+.p-recruit-message__img {
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+            clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}

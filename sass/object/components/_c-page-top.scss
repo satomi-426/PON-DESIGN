@@ -1,0 +1,31 @@
+@use "../../global" as g;
+
+.c-page-top {
+    position: fixed;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    border-radius: 50%;
+    right: 45px;
+    bottom: 45px;
+    cursor: pointer;
+    z-index: 100;
+    
+    @include g.mq(md) {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+.c-page-top__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    height: inherit;
+}
+.c-page-top__arrow {
+    @include g.font-size(20);
+    color: g.$color-primary;
+}

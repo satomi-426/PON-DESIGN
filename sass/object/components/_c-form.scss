@@ -1,0 +1,81 @@
+@use "../../global" as g;
+
+.c-form__item {
+    margin-bottom: 30px;
+}
+.c-form__title {
+    @include g.font-size(16);
+    font-weight: 600;
+    margin-bottom: 15px;
+
+    @include g.mq(md) {
+        @include g.font-size(15);
+    }
+}
+.c-form__title-require {
+    @include g.font-size(12);
+    color: g.$color-primary;
+    padding-left: 10px;
+}
+.tel-require {
+    @include g.font-size(12);
+    font-weight: 300;
+}
+.c-form__radio {
+    font-weight: 300;
+    margin-right: 35px;
+
+    @include g.mq(md) {
+        display: block;
+        @include g.font-size(13);
+    }
+}
+.c-form input[type=radio] {
+    margin-right: 5px;
+    border: 1px solid #333;
+}
+.c-form input[type=text],
+.c-form input[type=email],
+.c-form input[type=tel],
+.c-form textarea,
+.c-form select {
+    display: block;
+    background-color: #fff;
+    border: 1px solid #AAAAAA;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+.c-form input[type=text],
+.c-form input[type=email],
+.c-form select {
+    width: 300px;
+    height: 40px;
+
+    @include g.mq(md) {
+        width: 100%;
+    }
+}
+.c-form input[type=tel] {
+    width: 200px;
+    height: 40px;
+
+    @include g.mq(md) {
+        width: 100%;
+    }
+}
+.c-form textarea {
+    width: 600px;
+    height: 255px;
+
+    @include g.mq(md) {
+        width: 100%;
+    }
+}
+.c-form__background {
+    @include g.font-size(14);
+    padding-left: 15px;
+}
+.form__btnArea {
+    text-align: center;
+    margin-top: 50px;
+}

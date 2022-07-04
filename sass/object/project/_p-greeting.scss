@@ -1,0 +1,27 @@
+@use "../../global" as g;
+
+.p-greeting {
+    background-image: url(../../../img/company/bg-circle.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 35px;
+    margin-bottom: 140px;
+
+    @include g.mq(md) {
+        background-image: url(../../../img/company/sp-bg-cirlcles.png);
+        padding-top: 60px;
+    }
+}
+.p-greeting__inner {
+    background-image: url(../../../img/company/bg-face.png);
+    background-size: contain;
+    background-position: center;
+    padding: 65px 0 40px 0;
+    margin-bottom: 35px;
+    text-align: center;
+
+    @include g.mq(md) {
+        background-image: none;
+        padding: 0 0 25px 0;
+    }
+}

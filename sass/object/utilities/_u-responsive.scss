@@ -1,0 +1,9 @@
+@use "../../global" as g;
+
+.u-sp-only {
+    display: none;
+
+    @include g.mq(md) {
+        display: block;
+    }
+}

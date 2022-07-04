@@ -1,0 +1,11 @@
+@use "../../global" as g;
+
+.c-logo__img {
+    display: block;
+    width: 160px;
+    height: auto;
+
+    @include g.mq(md) {
+        width: 125px;
+    }
+}

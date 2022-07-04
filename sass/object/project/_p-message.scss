@@ -1,0 +1,27 @@
+@use "../../global" as g;
+
+.p-message__heading {
+    @include g.font-size(40);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    margin-bottom: 45px;
+
+    @include g.mq(lg) {
+        @include g.font-size(34);
+    }
+
+    @include g.mq(md) {
+        @include g.font-size(32);
+        line-height: 1.5;
+    }
+}
+.p-message__underline {
+    background: linear-gradient(transparent 75%, #F5F534 25%);
+}
+.p-message__text {
+    font-weight: 300;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+}

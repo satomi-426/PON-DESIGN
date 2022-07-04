@@ -1,0 +1,25 @@
+@use "../../global" as g;
+
+.p-access__map {
+    margin-bottom: 10px;
+}
+.p-access__map iframe {
+    height: 400px;
+    vertical-align: bottom;
+
+    @include g.mq(md) {
+        height: 240px;
+    }
+}
+.p-access__map-link a {
+    @include g.font-size(16);
+    font-weight: 300;
+    color: g.$color-primary;
+
+    @include g.mq(md) {
+        @include g.font-size(14);
+    }
+}
+.p-access__map-link a:hover {
+    text-decoration: underline;
+}

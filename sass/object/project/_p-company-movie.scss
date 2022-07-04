@@ -1,0 +1,22 @@
+@use "../../global" as g;
+
+.p-company-movie {
+    padding-bottom: 110px;
+}
+.p-company-movie__heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.p-company-movie__movie {
+    position: relative;
+    width:100%;
+    height:0;
+    padding-top: 56.25%;
+}
+.p-company-movie__movie iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

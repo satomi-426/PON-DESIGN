@@ -1,0 +1,19 @@
+@use "../../global" as g;
+
+.c-news-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include g.font-size(12);
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    background-color: g.$color-gray;
+    border-radius: 50px;
+    width: 82px;
+    height: 22px;
+
+    @include g.mq(md) {
+        @include g.font-size(11);
+    }
+}

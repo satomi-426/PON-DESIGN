@@ -1,0 +1,16 @@
+@use "../../global" as g;
+
+.p-contact {
+    background-color: #F7F7F7;
+    text-align: center;
+
+    @include g.mq(md) {
+        padding: 80px 0;
+    }
+}
+.p-contact__text {
+    font-weight: 300;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,46 @@
+@use "../../global" as g;
+
+.p-bread-crumb {
+    position: sticky;
+    top: 64px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    background-color: #F7F7F7;
+    padding: 0 20px;
+    z-index: 1;
+
+    @include g.mq(md) {
+        height: 25px;
+    }
+}
+.p-bread-crumb__list {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.p-bread-crumb__item {
+    display: inline;
+    @include g.font-size(12);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    list-style: none;
+
+    @include g.mq(md) {
+        @include g.font-size(11);
+    }
+}
+.p-bread-crumb__item::after {
+    content: ">";
+    padding: 0 3px;
+}
+.p-bread-crumb__item:last-child::after {
+    display: none;
+}
+.p-bread-crumb__link {
+    color: g.$color-primary;
+}
+.p-bread-crumb__link:hover {
+    text-decoration: underline;
+}

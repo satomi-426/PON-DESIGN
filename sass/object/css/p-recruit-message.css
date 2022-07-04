@@ -1,0 +1,54 @@
+.p-recruit-message {
+  text-align: center;
+}
+
+.p-recruit-message__inner {
+  padding: 0;
+}
+
+.p-recruit-message__heading {
+  color: #391E88;
+  padding: 0 20px;
+}
+
+.p-recruit-message__title {
+  font-size: 4.5rem;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  .p-recruit-message__title {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+}
+
+.p-recruit-message__subtitle {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .p-recruit-message__subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 25px;
+  }
+}
+
+.p-recruit-message__body {
+  line-height: 1.75;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .p-recruit-message__body {
+    font-size: 0.9375rem;
+    margin-bottom: 25px;
+  }
+}
+
+.p-recruit-message__img {
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}/*# sourceMappingURL=p-recruit-message.css.map */

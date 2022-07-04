@@ -1,0 +1,44 @@
+@use "../../global" as g;
+
+.c-btn {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to right, #7633a4 0%, #250d65 51%, #7633a4 100%);
+    background-size: 200% auto;
+    border-radius: 50px;
+    @include g.font-size(15);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 18px 77px;
+    transition: all .25s;
+
+    @include g.mq(md) {
+    @include g.font-size(14);
+        padding: 18px 70px;
+    }
+}
+.c-btn::after {
+    position: absolute;
+    font-family: "Font Awesome 6 Free";
+    content: "\f105";
+    font-weight: 900;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    transition: all .25s;
+}
+.c-btn:hover {
+    background-position: right center;
+}
+.c-btn:hover::after {
+    right: 15px;
+}
+.c-btn--transparent {
+    background: transparent;
+    border: 1px solid #fff;
+}
+.c-btn--transparent:hover {
+    opacity: .8;
+}

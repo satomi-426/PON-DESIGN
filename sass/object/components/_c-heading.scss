@@ -1,0 +1,40 @@
+@use "../../global" as g;
+
+.c-heading {
+    @include g.font-size(36);
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: g.$color-primary;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+    @include g.mq(md) {
+        @include g.font-size(30);
+    }
+}
+.c-heading.c-heading-white {
+    color: #fff;
+}
+.c-heading__sub {
+    display: block;
+    @include g.font-size(13);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    margin-top: 5px;
+
+    @include g.mq(md) {
+        @include g.font-size(13);
+    }
+}
+.c-heading-secondary {
+    @include g.font-size(32);
+    font-weight: bold;
+    color: g.$color-primary;
+    margin-bottom: 30px;
+
+    @include g.mq(md) {
+        @include g.font-size(24);
+    }
+}

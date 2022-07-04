@@ -1,0 +1,20 @@
+@use "../../global" as g;
+
+.p-news__inner {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    @include g.mq(md) {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+.p-news__heading {
+    @include g.mq(md) {
+        text-align: center;
+    }
+}
+.p-news-article__inner {
+    max-width: 750px;
+}

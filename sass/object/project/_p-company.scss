@@ -1,0 +1,18 @@
+@use "../../global" as g;
+
+.p-company {
+    background-image: url(../../../img/company/bg-circle.jpg);
+    background-position: center;
+    background-size: contain;
+    // text-align: center;
+}
+.p-company__inner {
+    background-image: url(../../../img/company/bg-face.png);
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+
+    @include g.mq(md) {
+        background-image: none;
+    }
+}

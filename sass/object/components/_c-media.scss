@@ -1,0 +1,30 @@
+@use "../../global" as g;
+
+.c-media {
+    display: flex;
+    gap: 50px;
+
+    @include g.mq(md) {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.c-media__img-wrapper {
+    flex: 0 1 40%;
+}
+.c-media__body {
+    flex: 1;
+}
+.c-media__title {
+    @include g.font-size(24);
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+    @include g.mq(md) {
+        @include g.font-size(18);
+        margin-bottom: 15px;
+    }
+}
+.c-media__text {
+    line-height: 1.8;
+}
